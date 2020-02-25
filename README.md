@@ -1,4 +1,4 @@
-# Nordic Energy - Stakking Calculator
+# Nordic Energy - Staking Calculator
 Ready to coded
 
 A simple webpage that calculates staking details on Nordic Energy´s PowerChain blockchain.
