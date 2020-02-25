@@ -252,7 +252,7 @@ class Login extends Component {
 
   }
   componentDidMount() {
-    fetch('https://api.coingecko.com/api/v3/coins/nordicenergy?localization=false&community_data=false&developer_data=false&sparkline=false')
+    fetch('https://api.coingecko.com/api/v3/coins/lition?localization=false&community_data=false&developer_data=false&sparkline=false')
     .then(res => res.json())
     .then((data) => {
       this.setState({ apiData: data }, () => this.processDataFromApi() )
@@ -533,7 +533,6 @@ function App() {
 }
 
 export default App;
-
 
 
 
