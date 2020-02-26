@@ -516,7 +516,7 @@ class Login extends Component {
             <div className='optionalInformationContainer'>
               <a href="https://blog.nordicenergy.info">Blog</a>
               <a href="https://github.com/nordicenergy/staking-calculator/">GitHub Link</a>
-              <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>Y
+              <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>
 
             </div>
           </div>
