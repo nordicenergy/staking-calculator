@@ -252,12 +252,12 @@ class Login extends Component {
 
   }
   componentDidMount() {
-    fetch('https://api.coingecko.com/api/v3/coins/lition?localization=false&community_data=false&developer_data=false&sparkline=false')
-    .then(res => res.json())
-    .then((data) => {
-      this.setState({ apiData: data }, () => this.processDataFromApi() )
-    })
-    .catch(console.log)
+    fetch('1609f116-a205-42f9-80b8-32a99fa17a6b')
+        .then(res => res.json())
+        .then((data) => {
+          this.setState({ apiData: data }, () => this.processDataFromApi() )
+        })
+        .catch(console.log)
   }
 
   processDataFromApi(){
@@ -336,7 +336,7 @@ class Login extends Component {
         },
         {
           value: 200,
-          label: (this.state.circulatingSuply / 1000000).toFixed(2)+"M NET",
+          label: (this.state.circulatingSuply / 1000000).toFixed(2)+"M Lit",
         },
       ]
     })
@@ -406,121 +406,122 @@ class Login extends Component {
       },
     }));
     return (
-      <div className='container'>
-        <div className='content'>
+        <div className='container'>
+          <div className='content'>
 
-          <div className='imageContainer'>
-            <img className='nordicenergylogoImage' src={logo} />
-            <span> 
-
-
+            <div className='imageContainer'>
+              <img className='nordicenergylogoImage' src={logo} />
+              <span>
+              Staking
+               <br />
+              Calculator
               </span>
-          </div>
-          <div className="userInputContainer">
-            <div className='textFormPairContainer'>
-              <p >My Staked Tokens</p>
-              <p className="netAmmount">{this.state.stakedTokens + "K NET"}</p>
-              <StakedTokensSlider className="stakedTokensSlider"
-                name="stakedTokens"
-                aria-label="discrete-slider-small-steps"
-                defaultValue={1}
-                marks={marks}
-                valueLabelDisplay="off"
-                min={0}
-                max={200}
-                step={1}
-                onChange={this.handleStakedTokensSlider}
-              />
             </div>
-            <div className='textFormPairContainer'>
-              <p >Use Cases</p>
-              <p className="netAmmount">{this.state.useCases}</p>
-              <StakedTokensSlider
-                name="useCases"
-                aria-label="discrete-slider-small-steps"
-                defaultValue={1}
-                marks={marksUseCases}
-                valueLabelDisplay="off"
-                min={2}
-                max={100}
-                step={1}
-                onChange={this.handleUseCasesSlider}
-              />
-            </div>
-            <div className='textFormPairContainer'>
-              <p >Total Staked Nordic Energy Tokens / Circulating Supply</p>
-              <p className="netAmmount">{this.state.percentageCirculatingSuply + "%"}</p>
-              <StakedTokensSlider className="stakedTokensSlider"
-                name="stakedTokens"
-                aria-label="discrete-slider-small-steps"
-                defaultValue={100}
-                marks={this.state.percentageMark}
-                valueLabelDisplay="off"
-                min={4}
-                max={200}
-                step={1}
-                onChange={this.handlePercentageCirculatingSuplySlider}
-              />
-            </div>
-            <div className='textFormPairContainer'>
-              <p>Node Type</p>
-              <Input type="select" name="nodeCategory" id="nodeCategorySelect" className='inputContainer' onChange={this.handleChange} >
-                <option value="1">Node</option>
-                <option value="2">Trust Node</option>
-                <option value="1.2">Nordic Energy Pool Staking 1 Month</option>
-                <option value="1.4">Nordic Energy Pool Staking 3 Months</option>
-                <option value="1.6">Nordic Energy Pool Staking 6 Months</option>
-                <option value="1.8">Nordic Energy Pool Staking 12 Months</option>
-              </Input>
-            </div>
+            <div className="userInputContainer">
+              <div className='textFormPairContainer'>
+                <p >My Staked Tokens</p>
+                <p className="netAmmount">{this.state.stakedTokens + " NET"}</p>
+                <StakedTokensSlider className="stakedTokensSlider"
+                                    name="stakedTokens"
+                                    aria-label="discrete-slider-small-steps"
+                                    defaultValue={1}
+                                    marks={marks}
+                                    valueLabelDisplay="off"
+                                    min={0}
+                                    max={200}
+                                    step={1}
+                                    onChange={this.handleStakedTokensSlider}
+                />
+              </div>
+              <div className='textFormPairContainer'>
+                <p >Use Cases</p>
+                <p className="netAmmount">{this.state.useCases}</p>
+                <StakedTokensSlider
+                    name="useCases"
+                    aria-label="discrete-slider-small-steps"
+                    defaultValue={1}
+                    marks={marksUseCases}
+                    valueLabelDisplay="off"
+                    min={2}
+                    max={100}
+                    step={1}
+                    onChange={this.handleUseCasesSlider}
+                />
+              </div>
+              <div className='textFormPairContainer'>
+                <p >Total Staked Tokens / Circulating Supply</p>
+                <p className="netAmmount">{this.state.percentageCirculatingSuply + "%"}</p>
+                <StakedTokensSlider className="stakedTokensSlider"
+                                    name="stakedTokens"
+                                    aria-label="discrete-slider-small-steps"
+                                    defaultValue={100}
+                                    marks={this.state.percentageMark}
+                                    valueLabelDisplay="off"
+                                    min={4}
+                                    max={200}
+                                    step={1}
+                                    onChange={this.handlePercentageCirculatingSuplySlider}
+                />
+              </div>
+              <div className='textFormPairContainer'>
+                <p>Node Type</p>
+                <Input type="select" name="nodeCategory" id="nodeCategorySelect" className='inputContainer' onChange={this.handleChange} >
+                  <option value="1">Node</option>
+                  <option value="2">Trust Node</option>
+                  <option value="1.2">Nordic Energy Pool Staking 1 Month</option>
+                  <option value="1.4">Nordic Energy Pool Staking 3 Months</option>
+                  <option value="1.6">Nordic Energy Pool Staking 6 Months</option>
+                  <option value="1.8">Nordic Energy Pool Staking 12 Months</option>
+                </Input>
+              </div>
 
-            <div className='textFormPairContainer'>
-              <p>Average Number of Transactions / Day</p>
-              <Input type="number" name="txNumber" step="1000" className='inputContainer' value={this.state.txNumber} onChange={this.handleChange} />
-            </div>
+              <div className='textFormPairContainer'>
+                <p>Average Number of Transactions / Day</p>
+                <Input type="number" name="txNumber" step="1000" className='inputContainer' value={this.state.txNumber} onChange={this.handleChange} />
+              </div>
 
-            <div className='textFormPairContainer'>
-              <p>Nordic Energy Token Price (USD)</p>
-              <Input type="number" name="tokenPrice"  step="0.1" className='inputContainer' value={this.state.tokenPrice} onChange={this.handleChange} />
-            </div>
+              <div className='textFormPairContainer'>
+                <p>Nordic Energy Token Price(USD)</p>
+                <Input type="number" name="tokenPrice"  step="0.1" className='inputContainer' value={this.state.tokenPrice} onChange={this.handleChange} />
+              </div>
 
-            <div className='textFormPairContainer'>
-              <label>Activate Genesis Phase</label>
-              <Switch
-                name="isGenesisPhase"
-                checked={this.state.isGenesisPhase}
-                onChange={this.handleCheckboxChange}
-                disabled={this.state.genesisPhaseCheckboxState}
-                onColor="#E6B800"
-                onHandleColor="#E6B800"
-                handleDiameter={28}
-                uncheckedIcon={false}
-                checkedIcon={false}
-                boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
-                activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
-                height={15}
-                width={50}
-                className="react-switch"
-                id="material-switch"
-              />
-            </div>
+              <div className='textFormPairContainer'>
+                <label>Activate Genesis Phase</label>
+                <Switch
+                    name="isGenesisPhase"
+                    checked={this.state.isGenesisPhase}
+                    onChange={this.handleCheckboxChange}
+                    disabled={this.state.genesisPhaseCheckboxState}
+                    onColor="#E6B800"
+                    onHandleColor="#E6B800"
+                    handleDiameter={28}
+                    uncheckedIcon={false}
+                    checkedIcon={false}
+                    boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                    activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                    height={15}
+                    width={50}
+                    className="react-switch"
+                    id="material-switch"
+                />
+              </div>
 
-          </div>
-          <div className='resultingIncomeContainer'>
-            <p>Resulting Income</p>
-            <p>{(this.result()).toFixed(2) + "$"}/day</p>
-            <p>{(this.result() * 30).toFixed(2) + "$"}/month</p>
-            <p>{(this.result() * 365).toFixed(2) + "$"}/year</p>
-            <p>{(this.result() * 365 / this.state.tokenPrice / this.state.stakedTokens * 100).toFixed(2) + "%"} - Annual Staking Rate</p>
-            <p>{(this.state.tokenPrice * this.state.stakedTokens).toFixed(2) + "$"} - my Nordic Energy Token value</p>
-          </div>
-          <div className='optionalInformationContainer'>
-            <a href="https://medium.com/nordicenergy-blog">Blog</a>
-            <a href="https://github.com/nordicenergy/staking-calculator/">GitHub Link</a>
-            <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>
+            </div>
+            <div className='resultingIncomeContainer'>
+              <p>Resulting Income</p>
+              <p>{(this.result()).toFixed(2) + "$"}/day</p>
+              <p>{(this.result() * 30).toFixed(2) + "$"}/month</p>
+              <p>{(this.result() * 365).toFixed(2) + "$"}/year</p>
+              <p>{(this.result() * 365 / this.state.tokenPrice / this.state.stakedTokens * 100).toFixed(2) + "%"} - annual Staking Rate</p>
+              <p>{(this.state.tokenPrice * this.state.stakedTokens).toFixed(2) + "$"} - my Nordic Energy (NET) Token value</p>
+            </div>
+            <div className='optionalInformationContainer'>
+              <a href="https://medium.com/nordicenergy-blog">Blog</a>
+              <a href="https://github.com/nordicenergy/staking-calculator/">GitHub Link</a>
+              <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>
+            </div>
           </div>
         </div>
-      </div>
     );
   }
 }
@@ -532,11 +533,6 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
 
 
 

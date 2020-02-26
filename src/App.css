@@ -59,7 +59,7 @@
   display: block;
   top: 7px;
   left: 13px;
-  }
+}
 
 
 .imageContainer span {
@@ -102,12 +102,12 @@
 }
 
 .textFormPairContainer{
-margin-bottom: 10px
+  margin-bottom: 10px
 }
 
 .textFormPairContainer p{
   margin: 0;
- }
+}
 
 .optionalInformationContainer{
   align-items: center;
@@ -116,8 +116,8 @@ margin-bottom: 10px
   /*border: 2px solid rgb(170, 49, 49);*/
 }
 .optionalInformationContainer a{
-    margin: 15px
-    /*border: 2px solid rgb(170, 49, 49);*/
+  margin: 15px
+  /*border: 2px solid rgb(170, 49, 49);*/
 
 }
 

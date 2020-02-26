@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.87dcc28b.chunk.css",
-    "main.js": "/static/js/main.53d10e40.chunk.js",
-    "main.js.map": "/static/js/main.53d10e40.chunk.js.map",
+    "main.css": "/static/css/main.058d83be.chunk.css",
+    "main.js": "/static/js/main.5d3dbd73.chunk.js",
+    "main.js.map": "/static/js/main.5d3dbd73.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.82cbd44b.js",
     "runtime-main.js.map": "/static/js/runtime-main.82cbd44b.js.map",
-    "static/js/2.35509c61.chunk.js": "/static/js/2.35509c61.chunk.js",
-    "static/js/2.35509c61.chunk.js.map": "/static/js/2.35509c61.chunk.js.map",
+    "static/js/2.4be2237a.chunk.js": "/static/js/2.4be2237a.chunk.js",
+    "static/js/2.4be2237a.chunk.js.map": "/static/js/2.4be2237a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a58941f071d84a389de05c0bfae36d31.js": "/precache-manifest.a58941f071d84a389de05c0bfae36d31.js",
+    "precache-manifest.6b05658b5ee89f9360afe256931eb140.js": "/precache-manifest.6b05658b5ee89f9360afe256931eb140.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.87dcc28b.chunk.css.map": "/static/css/main.87dcc28b.chunk.css.map",
-    "static/js/2.35509c61.chunk.js.LICENSE.txt": "/static/js/2.35509c61.chunk.js.LICENSE.txt",
-    "static/media/nordicenergy_logo_bw_black.png": "/static/media/nordicenergy_logo_bw_black.c76be4fd.png"
+    "static/css/main.058d83be.chunk.css.map": "/static/css/main.058d83be.chunk.css.map",
+    "static/js/2.4be2237a.chunk.js.LICENSE.txt": "/static/js/2.4be2237a.chunk.js.LICENSE.txt",
+    "static/media/nordicenergy_logo_bw_black.png": "/static/media/nordicenergy_logo_bw_black.62b8cafa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.82cbd44b.js",
-    "static/js/2.35509c61.chunk.js",
-    "static/css/main.87dcc28b.chunk.css",
-    "static/js/main.53d10e40.chunk.js"
+    "static/js/2.4be2237a.chunk.js",
+    "static/css/main.058d83be.chunk.css",
+    "static/js/main.5d3dbd73.chunk.js"
   ]
 }
