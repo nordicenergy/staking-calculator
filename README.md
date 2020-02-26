@@ -8,7 +8,8 @@ Nordic Energy will also introduce a reward system to stimulate stake pools and c
 Check www.staking.nordicenergy.io for the result.
 
 
-### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Available Scripts
 
