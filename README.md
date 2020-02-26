@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e2bf608a-0a70-4aff-9a80-8fbbfe9a5a50/deploy-status)](https://app.netlify.com/sites/staking-calculator-nordicenergy/deploys)
-
 # Nordic Energy - Staking Calculator
 
 

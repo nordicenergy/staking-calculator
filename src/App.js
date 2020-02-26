@@ -336,7 +336,7 @@ class Login extends Component {
         },
         {
           value: 200,
-          label: (this.state.circulatingSuply / 1000000).toFixed(2)+"M Lit",
+          label: (this.state.circulatingSuply / 1000000).toFixed(2)+"M Net",
         },
       ]
     })
@@ -412,15 +412,13 @@ class Login extends Component {
             <div className='imageContainer'>
               <img className='nordicenergylogoImage' src={logo} />
               <span>
-              Staking
-               <br />
-              Calculator
+
               </span>
             </div>
             <div className="userInputContainer">
               <div className='textFormPairContainer'>
                 <p >My Staked Tokens</p>
-                <p className="netAmmount">{this.state.stakedTokens + " NET"}</p>
+                <p className="netAmmount">{this.state.stakedTokens + "K NET"}</p>
                 <StakedTokensSlider className="stakedTokensSlider"
                                     name="stakedTokens"
                                     aria-label="discrete-slider-small-steps"
@@ -481,7 +479,7 @@ class Login extends Component {
               </div>
 
               <div className='textFormPairContainer'>
-                <p>Nordic Energy Token Price(USD)</p>
+                <p>Nordic Energy Token Price (USD)</p>
                 <Input type="number" name="tokenPrice"  step="0.1" className='inputContainer' value={this.state.tokenPrice} onChange={this.handleChange} />
               </div>
 
@@ -512,13 +510,14 @@ class Login extends Component {
               <p>{(this.result()).toFixed(2) + "$"}/day</p>
               <p>{(this.result() * 30).toFixed(2) + "$"}/month</p>
               <p>{(this.result() * 365).toFixed(2) + "$"}/year</p>
-              <p>{(this.result() * 365 / this.state.tokenPrice / this.state.stakedTokens * 100).toFixed(2) + "%"} - annual Staking Rate</p>
-              <p>{(this.state.tokenPrice * this.state.stakedTokens).toFixed(2) + "$"} - my Nordic Energy (NET) Token value</p>
+              <p>{(this.result() * 365 / this.state.tokenPrice / this.state.stakedTokens * 100).toFixed(2) + "%"} - Annual Staking Rate</p>
+              <p>{(this.state.tokenPrice * this.state.stakedTokens).toFixed(2) + "$"} - My Nordic Energy Token value</p>
             </div>
             <div className='optionalInformationContainer'>
-              <a href="https://medium.com/nordicenergy-blog">Blog</a>
+              <a href="https://blog.nordicenergy.info">Blog</a>
               <a href="https://github.com/nordicenergy/staking-calculator/">GitHub Link</a>
-              <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>
+              <a href="https://etherscan.io/address/0x163e6936bcBbFf19ab70d1E5083FEB4507E96EFB">Donate 1 NET</a>Y
+
             </div>
           </div>
         </div>

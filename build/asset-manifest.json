@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.058d83be.chunk.css",
-    "main.js": "/static/js/main.5d3dbd73.chunk.js",
-    "main.js.map": "/static/js/main.5d3dbd73.chunk.js.map",
+    "main.js": "/static/js/main.661555f9.chunk.js",
+    "main.js.map": "/static/js/main.661555f9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.82cbd44b.js",
     "runtime-main.js.map": "/static/js/runtime-main.82cbd44b.js.map",
-    "static/js/2.4be2237a.chunk.js": "/static/js/2.4be2237a.chunk.js",
-    "static/js/2.4be2237a.chunk.js.map": "/static/js/2.4be2237a.chunk.js.map",
+    "static/js/2.d69c634a.chunk.js": "/static/js/2.d69c634a.chunk.js",
+    "static/js/2.d69c634a.chunk.js.map": "/static/js/2.d69c634a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6b05658b5ee89f9360afe256931eb140.js": "/precache-manifest.6b05658b5ee89f9360afe256931eb140.js",
+    "precache-manifest.86ba480542d64600138e38a2ac44a3a6.js": "/precache-manifest.86ba480542d64600138e38a2ac44a3a6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.058d83be.chunk.css.map": "/static/css/main.058d83be.chunk.css.map",
-    "static/js/2.4be2237a.chunk.js.LICENSE.txt": "/static/js/2.4be2237a.chunk.js.LICENSE.txt",
-    "static/media/nordicenergy_logo_bw_black.png": "/static/media/nordicenergy_logo_bw_black.62b8cafa.png"
+    "static/js/2.d69c634a.chunk.js.LICENSE.txt": "/static/js/2.d69c634a.chunk.js.LICENSE.txt",
+    "static/media/nordicenergy_logo_bw_black.png": "/static/media/nordicenergy_logo_bw_black.00208750.png"
   },
   "entrypoints": [
     "static/js/runtime-main.82cbd44b.js",
-    "static/js/2.4be2237a.chunk.js",
+    "static/js/2.d69c634a.chunk.js",
     "static/css/main.058d83be.chunk.css",
-    "static/js/main.5d3dbd73.chunk.js"
+    "static/js/main.661555f9.chunk.js"
   ]
 }
