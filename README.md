@@ -5,7 +5,7 @@ A simple webpage that calculates staking details on Nordic Energy´s PowerChain 
 
 Nordic Energy will also introduce a reward system to stimulate stake pools and community adoption. As a proof-of-stake system, users stake their Nordic Energy (NET) tokens to participate in the network
 
-Check www.staking.nordicenergy.io for the result.
+Check https://staking-calculator-nordicenergy.netlify.com for the result.
 
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
